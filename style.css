@@ -27,7 +27,7 @@ article {
     background-color: var(--white);
     width: 280px;
     height: 400px;
-    margin: 100px auto;
+    margin: 110px auto;
     padding: 1.5rem;
     border: 1px solid black;
     border-radius:  15px;
@@ -82,7 +82,20 @@ header p {
     color: var(--gray);
 }
 
+.main a {
+    text-decoration: none;
+    color: var(--black);
+}
 
+.main a:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.main a:active {
+    color: var(--black);
+    text-shadow: 2px 4px 2px var(--primary);
+}
 
 /**********************/
 
@@ -108,3 +121,19 @@ figcaption {
 }
 
 /**********************/
+
+@media screen and (max-width: 600px) {
+
+    article {
+        width: 250px;
+        height: 420px;
+        padding: 1rem;
+    }
+
+    footer {
+        position: relative;
+        top: 30px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+}
